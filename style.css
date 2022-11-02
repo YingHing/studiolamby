@@ -18,7 +18,6 @@ Tags: example-tag
 
 body {
     background-color: #202020;
-    font-family: 'MyFont';
   }
 
 img {
@@ -38,6 +37,6 @@ nav a {
     color: #ffff;
 }
 
-.post_text h1 {
+h1 {
     font-family: 'Title';
 }
