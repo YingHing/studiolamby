@@ -18,7 +18,8 @@ function studiolamby_register_styles(){
 
     $version = wp_get_theme()->get( 'Version' );
     wp_enqueue_style('studiolamby-style', get_template_directory_uri() . "/style.css", array('studiolamby-bootstrap'), $version, 'all');
-    wp_enqueue_style('studiolamby-bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", array(), '4.4.1', 'all');
+    // wp_enqueue_style('studiolamby-bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", array(), '4.4.1', 'all');
+    wp_enqueue_style('studiolamby-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css", array(), '5.2.2', 'all');
     wp_enqueue_style('studiolamby-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css", array(), '5.13.0', 'all');
 }
 

@@ -19,34 +19,34 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="d-flex flex-grow-1">
+                    <span class="w-100 d-lg-none d-block">
+                        <!-- hidden spacer to center brand on mobile -->
+                    </span>
 
-            <div class="d-flex flex-grow-1">
-                <span class="w-100 d-lg-none d-block">
-                    <!-- hidden spacer to center brand on mobile -->
-                </span>
+                    <a class="navbar-brand d-none d-lg-inline-block" href="<?php echo home_url(); ?>">
+                        <h1>
+                            <?php echo get_bloginfo('name'); ?>
+                            <span class="d-block">
+                                <?php echo get_bloginfo('description'); ?>
+                            </span>
+                        </h1>
+                    </a>
+                </div>
 
-                <a class="navbar-brand d-none d-lg-inline-block" href="<?php echo home_url(); ?>">
-                    <h1>
-                        <?php echo get_bloginfo('name'); ?>
-                        <span class="d-block">
-                            <?php echo get_bloginfo('description'); ?>
-                        </span>
-                    </h1>
-                </a>
+                <div class="flex-grow-1 collapse navbar-collapse justify-content-end">
+                    <?php 
+                        wp_nav_menu(
+                            array(
+                                    'menu' => 'primary',
+                                    'container' => '',
+                                    'theme_location' => 'primary',
+                                    'items_wrap' => '<ul class="text-end flex-column m-0">%3$s</ul>'
+                            )
+                        );
+                    ?>
+                </div>
             </div>
-
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-                <?php 
-                    wp_nav_menu(
-                        array(
-                                'menu' => 'primary',
-                                'container' => '',
-                                'theme_location' => 'primary',
-                                'items_wrap' => '<ul class="navbar-nav ml-auto flex-column m-0">%3$s</ul>'
-                        )
-                    );
-                ?>
-            </div>
-
         </nav>
     </header>
