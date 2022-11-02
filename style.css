@@ -1,0 +1,43 @@
+/*
+Theme Name: Studio Lamby
+Theme URI: n/a
+Author: Yinghing
+Author URI: n/a
+Description: example description...
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: example-tag
+*/
+
+@font-face {
+    font-family: 'Title';
+    src:  url('assets/fonts/neuehaasdisplaybold-webfont.woff') format('woff'),
+          url('assets/fonts/neuehaasdisplaybold-webfont.woff2') format('woff2');
+  }
+
+body {
+    background-color: #202020;
+    font-family: 'MyFont';
+  }
+
+img {
+    max-width:100%;height:auto
+}
+
+nav a {
+    color: #ffff
+}
+
+.post_text {
+    height:80vh;
+    text-align: left;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    color: #ffff;
+}
+
+.post_text h1 {
+    font-family: 'Title';
+}
