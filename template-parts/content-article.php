@@ -1,18 +1,29 @@
 <div class="container-fluid">
     <header class="content-header">
         <?php 
-            $args = array( 
-                'post_type' => 'attachment', 
+            // $args = array( 
+            //     'post_type' => 'attachment', 
+            //     'post_mime_type' => 'image',
+            //     'post_status' => null, 
+            //     'post_parent' => $post->ID 
+            // );
+
+            $args = [
+                'post_type' => 'attachment',
                 'post_mime_type' => 'image',
-                'post_status' => null, 
-                'post_parent' => $post->ID 
-            );
+                'orderby' => 'post_date',
+                'order' => 'desc',
+                'posts_per_page' => '10',
+                // 'post_parent' => $post->ID 
+            ];
+            
             $oddLoop = true;
 
-            function post($args = null, $oddLoop = null){
+            function post($args, $oddLoop){
                 $attachments = get_posts( $args );
+                // var_dump($attachments);
                 if ($attachments) {
-                    foreach ( $attachments as $value => $post) {
+                    foreach ( $attachments as $post) {
 
                         if ($oddLoop =! $oddLoop){
                                 
