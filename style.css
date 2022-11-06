@@ -1,13 +1,11 @@
 /*
 Theme Name: Studio Lamby
-Theme URI: n/a
 Author: Yinghing
-Author URI: n/a
 Description: example description...
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: example-tag
+Tags: Portfolio
 */
 
 @font-face {
@@ -32,15 +30,18 @@ nav a {
     color: #ffff
 }
 
-.post_text {
-    height:80vh;
+h1 {
+    font-family: 'Title';
+}
+
+.post-text {
     text-align: left;
-    display: flex;
     justify-content: end;
     flex-direction: column;
     color: #ffff;
 }
 
-h1 {
-    font-family: 'Title';
+.page-text {
+    color: #ffff;
 }
+

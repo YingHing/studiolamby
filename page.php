@@ -11,6 +11,8 @@
 				get_template_part('template-parts/content','page');
 			}
 		}
+
+		/* Template Name: PageWithoutSidebar */
 	?>
 </article>
 

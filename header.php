@@ -26,7 +26,7 @@
                     </span>
 
                     <a class="navbar-brand d-none d-lg-inline-block" href="<?php echo home_url(); ?>">
-                        <h1>
+                        <h1 class="display-1">
                             <?php echo get_bloginfo('name'); ?>
                             <span class="d-block">
                                 <?php echo get_bloginfo('description'); ?>

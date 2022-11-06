@@ -1,14 +1,13 @@
-<header class="content-header">
+<div class=container-fluid>
     <div class="row">
-        <div class="col-4">
-            <?php
-                //  $recent["post_title"]
-
-                // the_content();
-                // echo var_dump(the_content());
-                ?>
+        <div class="col">
+            <div class="page-text display-1 fixed-bottom">
+                    <?php 
+                        $current_page = get_queried_object();
+                        $content      = apply_filters( 'the_content', $current_page->post_content );
+                        echo $content;
+                    ?>
+            </div>
         </div>
-        <div class="col-4">asdasdasd</div>
-        <div class="col-4">asdasdasd</div>
     </div>
-</header>
+</div>
