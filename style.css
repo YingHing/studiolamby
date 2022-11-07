@@ -26,12 +26,34 @@ img {
     margin-top: 45vh;
 }
 
+.mt-7 {
+    margin-top: calc(var(--bs-gutter-x) * 1);
+}
+
+.sticky-top {
+    top: 2rem !important;
+}
+
 nav a {
     color: #ffff
 }
 
 h1 {
     font-family: 'Title';
+    width:fit-content;
+    height:fit-content;
+}
+
+.big-title {
+    font-size: calc(8rem + 1vw);
+    transition: 0.5s;
+    animation-timing-function: linear;
+}
+
+.small-title {
+    font-size: calc(4.5rem + 1vw);
+    transition: 0.5s;
+    animation-timing-function: linear;
 }
 
 .post-text {

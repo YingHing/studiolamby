@@ -18,7 +18,7 @@
 
 <body>
     <!-- <header class="header"> -->
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark page-title">
             <div class="container-fluid mt-3">
                 <div class="d-flex flex-grow-1">
                     <span class="w-100 d-lg-none d-block">
@@ -26,7 +26,7 @@
                     </span>
 
                     <a class="navbar-brand d-none d-lg-inline-block" href="<?php echo home_url(); ?>">
-                        <h1 class="display-1">
+                        <h1 class="big-title">
                             <?php echo get_bloginfo('name'); ?>
                             <span class="d-block">
                                 <?php echo get_bloginfo('description'); ?>
