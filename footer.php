@@ -1,17 +1,15 @@
-        <div class="sticky_footer">
-            <footer>
+                <div class="sticky_footer">
+                    <footer>
 
 
 
-            </footer>
-        </div>
+                    </footer>
+                </div>
 
-        <?php
-	wp_footer();
-?>
+                <?php
+                wp_footer();
+                ?>
+                </div>
+                </body>
 
-
-
-        </body>
-
-        </html>
+                </html>
