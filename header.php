@@ -17,9 +17,8 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-default navbar-dark page-title">
-            <div class="container-fluid justify-content-between size-column">
-                <div class="navbar-header">
+        <nav class="navbar navbar-default navbar-dark page-title animate__animated animate__slideInDown">
+            <div class="container-fluid justify-content-between size-column px-4">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
                         <h1 class="size-title-big glitch is-glitching" data-text="Studio Lamby">
                             <span class="d-block">
@@ -30,20 +29,17 @@
                             </span>
                         </h1>
                     </a>
-                </div>
                 
 
-                <div class="nav navbar-nav">
-                    <?php 
-                        wp_nav_menu(
-                            array(
-                                    'menu' => 'primary',
-                                    'container' => '',
-                                    'theme_location' => 'primary',
-                                    'items_wrap' => '<ul class="nav flex-lg-column text-end">%3$s</ul>'
-                            )
-                        );
-                    ?>
-                </div>
+                        <?php 
+                            wp_nav_menu(
+                                array(
+                                        'menu' => 'primary',
+                                        'container' => '',
+                                        'theme_location' => 'primary',
+                                        'items_wrap' => '<ul class="nav flex-lg-column text-end">%3$s</ul>'
+                                )
+                            );
+                        ?>
             </div>
         </nav>

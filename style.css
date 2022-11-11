@@ -20,6 +20,12 @@ Tags: Portfolio
          url('assets/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'Read';
+    src: url('assets/fonts/neuehaasdisplaythin-webfont.woff') format('woff'),
+         url('assets/fonts/neuehaasdisplaythin-webfont.woff2') format('woff2');
+  }
+
 body {
     background-color: #202020;
   }
@@ -54,13 +60,23 @@ nav ul li a:hover {
 
 @media screen and (max-width: 992px) {
     nav a {
-      margin-right: 1vh;
+      margin-right: 1.5vh;
+      font-size: 5vw;
     }
   }
 
 h1 {
     font-family: 'Title';
+    line-height: 1;
+}
+
+nav h1 {
     text-transform: uppercase;
+    color: #ffff;
+}
+
+p {
+    font-family: 'Read';
 }
 
 .size-title-big {
@@ -71,7 +87,7 @@ h1 {
 
 @media screen and (max-width: 992px) {
     .size-title-big {
-      font-size: 7vw;
+      font-size: 6.7vw;
     }
   }
 
@@ -85,10 +101,6 @@ h1 {
     font-size: 10vw;
 }
 
-.size-title-article {
-    font-size: 4.5vw;
-}
-
 .post-text {
     text-align: left;
     justify-content: end;
@@ -99,9 +111,9 @@ h1 {
 @media screen and (min-width: 992px) {
     .article-bottom {
       position: fixed;
-      right: 0;
       bottom: 0;
-      left: 0;
+      /* left: 0;
+      right: 0; */
       z-index: 1030;
     }
 }
