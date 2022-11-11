@@ -40,17 +40,23 @@ img {
     top: 2rem !important;
 }
 
-@media screen and (max-width: 992px) {
-    .big-title {
-      font-size: 30px;
-    }
-  }
-
 nav a {
     color: #ffff;
     font-family: 'Nav';
-    font-size: 2.5vw;
+    font-size: 1.5vw;
+    text-decoration: none;
 }
+
+nav ul li a:hover {
+    text-decoration: line-through;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    nav a {
+      margin-right: 1vh;
+    }
+  }
 
 h1 {
     font-family: 'Title';
@@ -63,10 +69,20 @@ h1 {
     animation-timing-function: linear;
 }
 
+@media screen and (max-width: 992px) {
+    .size-title-big {
+      font-size: 7vw;
+    }
+  }
+
 .size-title-small {
     font-size: 2.5vw;
     transition: 0.5s;
     animation-timing-function: linear;
+}
+
+.size-title-mobile {
+    font-size: 10vw;
 }
 
 .size-title-article {
@@ -80,8 +96,14 @@ h1 {
     color: #ffff;
 }
 
-.flex-custom {
-    flex: 0 0 100%;
+@media screen and (min-width: 992px) {
+    .article-bottom {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1030;
+    }
 }
 
 .typewriter {
@@ -100,5 +122,4 @@ h1 {
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  
+}
