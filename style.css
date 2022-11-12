@@ -9,15 +9,15 @@ Tags: Portfolio
 */
 
 @font-face {
-    font-family: 'Title';
-    src: url('assets/fonts/neuehaasdisplayroman-webfont.woff') format('woff'),
-         url('assets/fonts/neuehaasdisplayroman-webfont.woff2') format('woff2');
+  font-family: 'Title';
+  src: url('assets/fonts/neuehaasdisplayroman-webfont.woff') format('woff'),
+  url('assets/fonts/neuehaasdisplayroman-webfont.woff2') format('woff2');
   }
 
 @font-face {
-    font-family: 'Nav';
-    src: url('assets/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff'),
-         url('assets/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2');
+  font-family: 'Nav';
+  src: url('assets/fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff'),
+  url('assets/fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2');
 }
 
 @font-face {
@@ -27,29 +27,29 @@ Tags: Portfolio
   }
 
 body {
-    background-color: #202020;
-  }
+  background-color: #202020;
+}
 
 img {
-    max-width:100%;height:auto
+  max-width:100%;height:auto
 }
 
 .mt-6 {
-    margin-top: 35vh;
+  margin-top: 35vh;
 }
 
 .mt-7 {
-    margin-top: calc(var(--bs-gutter-x) * 1);
+  margin-top: calc(var(--bs-gutter-x) * 1);
 }
 
 .sticky-top {
-    top: 2rem !important;
+  top: 2rem !important;
 }
 
 nav a {
-    color: #ffff;
-    font-family: 'Nav';
-    text-decoration: none;
+  color: #ffff;
+  font-family: 'Nav';
+  text-decoration: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -66,22 +66,23 @@ nav a {
   }
 
 nav ul li a:hover {
-    text-decoration: line-through;
-    color: #fff;
+  text-decoration: line-through;
+  color: #fff;
 }
 
 h1 {
-    font-family: 'Title';
+  font-family: 'Title';
+  color: #ffff;
 }
 
 nav h1 {
-    text-transform: uppercase;
-    color: #ffff;
-    line-height: 1;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 p {
-    font-family: 'Read';
+  font-family: 'Read';
+  color: #ffff;
 }
 
 @media screen and (min-width: 992px) {
@@ -99,20 +100,20 @@ p {
   }
 
 .size-title-small {
-    font-size: 2.5vw;
-    transition: 0.5s;
-    animation-timing-function: linear;
+  font-size: 2.5vw;
+  transition: 0.5s;
+  animation-timing-function: linear;
 }
 
 .size-title-mobile {
-    font-size: 7vw;
+  font-size: 7vw;
 }
 
 .post-text {
-    text-align: left;
-    justify-content: end;
-    flex-direction: column;
-    color: #ffff;
+  text-align: left;
+  justify-content: end;
+  flex-direction: column;
+  color: #ffff;
 }
 
 @media screen and (min-width: 992px) {
@@ -126,13 +127,13 @@ p {
 }
 
 .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: .1em; /* Adjust as needed */
-    color: #ffff;
-    font-family: 'Title';
-    animation: 
-      typing 5s steps(50, start);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .1em; /* Adjust as needed */
+  color: #ffff;
+  font-family: 'Title';
+  animation: 
+    typing 6.5s steps(95, start);
 
   }
   
@@ -153,3 +154,24 @@ p {
       font-size: 4vw;
     }
   }
+
+hr {
+  color: #fff;
+  width:100%;
+}
+
+.index-hover:hover {
+  background-color: #fff;
+  text-decoration: line-through;
+}
+
+.index-hover:hover h1 {
+  color: #202020;
+  
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-text-end {
+    text-align: right!important;
+  }
+}

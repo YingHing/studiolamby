@@ -14,7 +14,6 @@
     }
 ?>
 
-<div class="container-fluid px-4 mb-4">
     <div class="row">
         <div class="col-lg-4 stick-bottom animate__animated animate__slideInUp animate__slow">
             <div class="post-text" >
@@ -31,4 +30,3 @@
             <?php post($args, $oddLoop = false); ?>
         </div>
     </div>
-</div>
