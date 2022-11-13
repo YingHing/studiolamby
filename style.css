@@ -120,10 +120,17 @@ p {
     .stick-bottom {
       position: fixed;
       bottom: 0;
-      /* left: 0;
-      right: 0; */
-      z-index: 1030;
+      left: 0;
+      right: 0;
+      z-index: 2030;
+      padding-left:1.5rem!important;
     }
+}
+
+@media screen and (max-width: 992px) {
+  .stick-bottom {
+    margin-top: 15vh;
+  }
 }
 
 .typewriter {
@@ -132,9 +139,6 @@ p {
   letter-spacing: .1em; /* Adjust as needed */
   color: #ffff;
   font-family: 'Title';
-  animation: 
-    typing 6.5s steps(95, start);
-
   }
   
   /* The typing effect */
@@ -146,18 +150,19 @@ p {
 @media screen and (min-width: 992px) {
     .typewriter {
         font-size: 1.5vw;
+        animation: typing 6.5s steps(95, start);
     }
   }
 
 @media screen and (max-width: 992px) {
     .typewriter {
       font-size: 4vw;
+      animation: typing 2.5s steps(35, start);
     }
   }
 
 hr {
   color: #fff;
-  width:100%;
 }
 
 .index-hover:hover {
@@ -173,5 +178,22 @@ hr {
 @media screen and (max-width: 992px) {
   .mobile-text-end {
     text-align: right!important;
+  }
+}
+
+.link-style a {
+  font-family: 'Nav';
+  text-decoration: none;
+  color: #fff;
+  font-size: 2vw;
+}
+
+.link-style:hover a{
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 992px) {
+  .link-style a {
+    font-size: 5vw;
   }
 }

@@ -1,6 +1,6 @@
 <div class="row index-hover" style="transform: rotate(0); height:90px;">
 
-    <hr class="mx-auto" style="width:98%;"/>
+    <hr class="mx-auto" style="width:99%;"/>
 
     <div class="col">
         <h1>

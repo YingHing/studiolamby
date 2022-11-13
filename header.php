@@ -20,7 +20,7 @@
         <nav class="navbar navbar-default navbar-dark page-title animate__animated animate__slideInDown">
             <div class="container-fluid justify-content-between size-column px-4">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                        <h1 class="size-title-big glitch is-glitching" data-text="Studio Lamby">
+                        <h1 class="size-title-big" data-text="Studio Lamby">
                             <span class="d-block">
                                 <?php echo get_bloginfo('name'); ?>
                             </span>

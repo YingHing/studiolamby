@@ -3,7 +3,7 @@
 ?>
 
 <article class="content">
-	<div class="container-fluid px-4 mb-6">
+	<div class="container-fluid px-4">
 		<?php
 			if( have_posts() ){
 				while( have_posts() ){
