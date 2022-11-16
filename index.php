@@ -2,8 +2,8 @@
 	get_header();
 ?>
 
-<article class="content">
-    <div class="container-fluid px-4 mt-6 mb-4 fixed-bottom animate__animated animate__slideInUp">
+<article class="content mt-auto">
+    <div class="container-fluid animate__animated animate__slideInUp">
         <?php
             if( have_posts() ){
                 while( have_posts() ){
@@ -13,7 +13,6 @@
                 }
             }
         ?>
-        <hr class="m-0"/>
     </div>
 </article>
 

@@ -42,6 +42,22 @@ img {
   margin-top: calc(var(--bs-gutter-x) * 1);
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-9 {
+  margin-top: 50vh;
+}
+
+.mb-6 {
+  margin-bottom: 5.5rem!important;
+}
+
+.w-33 {
+  width: 33%!important;
+}
+
 .sticky-top {
   top: 2rem !important;
 }
@@ -50,13 +66,8 @@ nav a {
   color: #ffff;
   font-family: 'Nav';
   text-decoration: none;
+  font-size: 1.5vw;
 }
-
-@media screen and (min-width: 992px) {
-    nav a {
-      font-size: 1.5vw;
-    }
-  }
 
 @media screen and (max-width: 992px) {
     nav a {
@@ -75,6 +86,11 @@ h1 {
   color: #ffff;
 }
 
+.wp-block-table table {
+  border-collapse: separate;
+  border-spacing: 0 2rem;
+}
+
 nav h1 {
   text-transform: uppercase;
   line-height: 1;
@@ -85,13 +101,11 @@ p {
   color: #ffff;
 }
 
-@media screen and (min-width: 992px) {
-    .size-title-big {
-        font-size: 4.5vw;
-        transition: 0.5s;
-        animation-timing-function: linear;
-    }
-  }
+.size-title-big {
+  font-size: 4.5vw;
+  transition: 0.5s;
+  animation-timing-function: linear;
+}
 
 @media screen and (max-width: 992px) {
     .size-title-big {
@@ -139,6 +153,8 @@ p {
   letter-spacing: .1em; /* Adjust as needed */
   color: #ffff;
   font-family: 'Title';
+  font-size: 1.5vw;
+        animation: typing 6.5s steps(95, start);
   }
   
   /* The typing effect */
@@ -146,13 +162,6 @@ p {
     from { width: 0 }
     to { width: 100% }
 }
-
-@media screen and (min-width: 992px) {
-    .typewriter {
-        font-size: 1.5vw;
-        animation: typing 6.5s steps(95, start);
-    }
-  }
 
 @media screen and (max-width: 992px) {
     .typewriter {
@@ -163,6 +172,7 @@ p {
 
 hr {
   color: #fff;
+  opacity: 0.5;
 }
 
 .index-hover:hover {
@@ -182,7 +192,7 @@ hr {
 }
 
 .link-style a {
-  font-family: 'Nav';
+  font-family: 'Title';
   text-decoration: none;
   color: #fff;
   font-size: 2vw;
@@ -196,4 +206,51 @@ hr {
   .link-style a {
     font-size: 5vw;
   }
+}
+
+.widthsize-mobile {
+  width:33%;
+  font-size: calc(0.1rem + 2vw);
+}
+
+@media screen and (max-width: 992px) {
+  .widthsize-mobile {
+    width:100%;
+  }
+}
+
+@keyframes ticker {
+  from {transform: translate3d(0,0,0);}
+  to {transform: translate3d(-100%,0,0);}
+}
+
+.ticker {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  padding: 0 1em;
+}
+
+.ticker p {
+  flex: 0 0 auto;
+  animation: 30s linear 0s infinite ticker;
+  font-family: 'Title';
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 992px) {
+  .ticker p {
+    font-size: 3.5vw;
+  }
+  
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

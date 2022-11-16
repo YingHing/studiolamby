@@ -2,8 +2,8 @@
 
  <?php get_header(); ?>
 
- <article class="content">
- 	<div class="container-fluid px-4 size-title-mobile fixed-bottom">
+ <article class="content mt-auto">
+ 	<div class="container-fluid px-4 size-title-mobile mt-auto">
 		<?php
 			if( have_posts() ){
 				while( have_posts() ){

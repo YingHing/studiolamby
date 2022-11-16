@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <!-- Meta -->
@@ -16,8 +16,8 @@
 
 </head>
 
-<body>
-        <nav class="navbar navbar-default navbar-dark page-title animate__animated animate__slideInDown">
+<body class="h-100 d-flex flex-column">
+        <nav class="navbar navbar-default navbar-dark sticky-top page-title animate__animated animate__slideInDown">
             <div class="container-fluid justify-content-between size-column px-4">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
                         <h1 class="size-title-big" data-text="Studio Lamby">

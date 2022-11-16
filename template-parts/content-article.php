@@ -15,7 +15,7 @@
 ?>
 
 <div class="row">
-    <div class="col-lg-4 stick-bottom mb-3 animate__animated animate__slideInUp">
+    <div class="col-lg-4 stick-bottom py-3 animate__animated animate__slideInUp">
         <div class="post-text" >
             <h1 class="size-title-article"> <?php echo(the_title()); ?> </h1>
             <p class="lead"> <?php echo wp_strip_all_tags( get_the_content() ); ?> </p>
@@ -32,7 +32,7 @@
 </div>
 
 <div class="row animate__animated animate__slideInUp animate__slow">
-    <div class="col-lg-8 offset-lg-4 d-flex my-4">
+    <div class="col-lg-8 offset-lg-4 d-flex my-3">
         <div class="me-auto link-style">
             <a href="<?php echo home_url(); ?>">Back</a>
         </div>

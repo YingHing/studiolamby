@@ -2,7 +2,7 @@
 	get_header();
 ?>
 
-<article class="content">
+<article class="content mt-auto">
 	<div class="container-fluid px-4">
 		<?php
 			if( have_posts() ){
@@ -17,6 +17,8 @@
 	</div>
 </article>
 
+<div style="display: none">
 <?php 
 	get_footer();
 ?>
+</div>
