@@ -69,6 +69,11 @@ nav a {
   font-size: 1.5vw;
 }
 
+a.active {
+  text-decoration: line-through;
+  color: #fff;
+}
+
 @media screen and (max-width: 992px) {
     nav a {
       margin-right: 1.5vh;
@@ -216,6 +221,7 @@ hr {
 @media screen and (max-width: 992px) {
   .widthsize-mobile {
     width:100%;
+    font-size: calc(1rem + 2vw);
   }
 }
 

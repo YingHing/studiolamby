@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en" class="min-vh-100">
 
 <head>
     <!-- Meta -->
@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="h-100 d-flex flex-column">
+<body class="min-vh-100 d-flex flex-column">
         <nav class="navbar navbar-default navbar-dark sticky-top page-title animate__animated animate__slideInDown">
             <div class="container-fluid justify-content-between size-column px-4">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
