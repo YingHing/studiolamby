@@ -50,6 +50,10 @@ img {
   margin-top: 50vh;
 }
 
+.mt-10 {
+  margin-top: 9vh;
+}
+
 .mb-6 {
   margin-bottom: 5.5rem!important;
 }
@@ -62,11 +66,20 @@ img {
   top: 2rem !important;
 }
 
+nav {
+  mix-blend-mode: difference;
+}
+
 nav a {
   color: #ffff;
   font-family: 'Nav';
   text-decoration: none;
   font-size: 1.5vw;
+}
+
+nav h1 {
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 a.active {
@@ -86,6 +99,10 @@ nav ul li a:hover {
   color: #fff;
 }
 
+p {
+  font-family: 'Read';
+}
+
 h1 {
   font-family: 'Title';
   color: #ffff;
@@ -96,14 +113,10 @@ h1 {
   border-spacing: 0 2rem;
 }
 
-nav h1 {
-  text-transform: uppercase;
-  line-height: 1;
-}
-
-p {
-  font-family: 'Read';
-  color: #ffff;
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .size-title-big {
@@ -230,7 +243,12 @@ hr {
   to {transform: translate3d(-100%,0,0);}
 }
 
-.ticker {
+@keyframes ticker-reverse {
+  from {transform: translate3d(-100%,0,0);}
+  to {transform: translate3d(0,0,0);}
+}
+
+.ticker, .ticker-reverse, .ticker-footer {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
@@ -241,7 +259,25 @@ hr {
 
 .ticker p {
   flex: 0 0 auto;
-  animation: 30s linear 0s infinite ticker;
+  animation: 120s linear 0s infinite ticker;
+  font-family: 'Title';
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 5vw;
+}
+
+.ticker-reverse p {
+  flex: 0 0 auto;
+  animation: 120s linear 0s infinite ticker-reverse;
+  font-family: 'Title';
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 5vw;
+}
+
+.ticker-footer p {
+  flex: 0 0 auto;
+  animation: 30s linear 0s infinite ticker-reverse;
   font-family: 'Title';
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -249,14 +285,19 @@ hr {
 }
 
 @media screen and (max-width: 992px) {
-  .ticker p {
+  .ticker-footer p {
     font-size: 3.5vw;
   }
-  
 }
 
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
+@media screen and (max-width: 992px) {
+  .ticker p {
+    font-size: 14vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ticker-reverse p {
+    font-size: 14vw;
+  }
 }

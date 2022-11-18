@@ -26,12 +26,12 @@
         <?php post($args, $oddLoop = true); ?>
     </div>
 
-    <div class="col-lg-4 animate__animated animate__slideInUp animate__slow">
+    <div class="col-lg-4 animate__animated animate__slideInUp">
         <?php post($args, $oddLoop = false); ?>
     </div>
 </div>
 
-<div class="row animate__animated animate__slideInUp animate__slow">
+<div class="row animate__animated animate__slideInUp">
     <div class="col-lg-8 offset-lg-4 d-flex my-3">
         <div class="me-auto link-style">
             <a href="<?php echo home_url(); ?>">Back</a>

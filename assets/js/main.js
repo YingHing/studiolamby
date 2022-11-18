@@ -1,14 +1,14 @@
 
-function stickyNav() {
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 1){
-			$('.page-title').addClass("sticky-top")
-		}
-		else{
-			$('.page-title').removeClass("sticky-top")
-		}
-	});
-}
+// function stickyNav() {
+// 	$(window).scroll(function() {
+// 		if ($(this).scrollTop() > 1){
+// 			$('.page-title').addClass("sticky-top")
+// 		}
+// 		else{
+// 			$('.page-title').removeClass("sticky-top")
+// 		}
+// 	});
+// }
 
 function resizeLogo() {
 	if (window.location.pathname != "/"){

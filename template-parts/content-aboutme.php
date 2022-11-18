@@ -1,9 +1,8 @@
-
 <?php
-$content = split_content();
+    $content = split_content();
 ?>
 
-<div class="container-fluid px-4 py-5 mb-5 animate__animated animate__slideInUp animate__slow">
+<div class="container-fluid px-4 py-5 mb-5 animate__animated animate__slideInUp">
 <div class="row mt-9">
         <div class="col">
             <div class="post-text" >
@@ -13,7 +12,7 @@ $content = split_content();
     </div>
 </div>
 
-<div class="container-fluid px-4 py-5 animate__animated animate__slideInUp animate__slow" style="background-color: #000;">
+<div class="container-fluid px-4 py-5 animate__animated animate__slideInUp" style="background-color: #000;">
 <!-- <hr class="m-auto" style="width:100%;"/> -->
     <div class="row py-5">
         <div class="col-lg-auto pe-5">
