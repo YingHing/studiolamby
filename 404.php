@@ -1,6 +1,4 @@
-<?php 
-	get_header();
-?>
+<?php get_header(); ?>
 
 <article class="content">
 	<div class="container-fluid p-0 h-100 m-0 " style="background-color: #000;">
@@ -37,8 +35,6 @@
 </article>
 
 <div style="display: none;">
-    <?php 
-        get_footer();
-    ?>
+    <?php get_footer(); ?>
 </div>
 

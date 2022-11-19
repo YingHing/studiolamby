@@ -10,9 +10,7 @@
     <meta name="author" content="Ying">
     <link rel="shortcut icon" href="/wordpress/wp-content/themes/wordpresstutorial/assets/images/favicon-32x32-02.png">
 
-    <?php 
-    wp_head();
-    ?>
+<?php wp_head(); ?>
 
 </head>
 
@@ -20,7 +18,7 @@
         <nav class="navbar navbar-default navbar-dark sticky-top sticky-top animate__animated animate__slideInDown">
             <div class="container-fluid justify-content-between size-column px-4">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                        <h1 class="size-title-big" data-text="Studio Lamby">
+                        <h1 class="size-title-big hoverpink">
                             <span class="d-block">
                                 <?php echo get_bloginfo('name'); ?>
                             </span>
@@ -29,17 +27,16 @@
                             </span>
                         </h1>
                     </a>
-                
 
-                        <?php 
-                            wp_nav_menu(
-                                array(
-                                        'menu' => 'primary',
-                                        'container' => '',
-                                        'theme_location' => 'primary',
-                                        'items_wrap' => '<ul class="nav flex-lg-column text-end">%3$s</ul>'
-                                )
-                            );
-                        ?>
+                    <?php 
+                        wp_nav_menu(
+                            array(
+                                    'menu' => 'primary',
+                                    'container' => '',
+                                    'theme_location' => 'primary',
+                                    'items_wrap' => '<ul class="navbar flex-lg-column align-items-end">%3$s</ul>'
+                            )
+                        );
+                    ?>
             </div>
         </nav>

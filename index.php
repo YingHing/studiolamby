@@ -1,6 +1,4 @@
-<?php 
-	get_header();
-?>
+<?php get_header(); ?>
 
 <article class="content mt-auto">
     <div class="container-fluid animate__animated animate__slideInUp">
@@ -16,6 +14,4 @@
     </div>
 </article>
 
-<?php 
-	get_footer();
-?>
+<?php get_footer(); ?>

@@ -7,7 +7,7 @@
         if (!empty($args)) {
             foreach ($args as $image) {
                 if ($oddLoop = !$oddLoop) {
-                    echo "<img src='{$image}' class='mt-7'/>";
+                    echo "<img src='{$image}' class='mt-7 hover'/>";
                 }
             }
         }

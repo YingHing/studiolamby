@@ -1,6 +1,4 @@
-<?php 
-	get_header();
-?>
+<?php get_header(); ?>
 
 <article class="content mt-auto">
 	<div class="container-fluid px-4">
@@ -18,7 +16,5 @@
 </article>
 
 <div style="display: none">
-<?php 
-	get_footer();
-?>
+	<?php get_footer(); ?>
 </div>

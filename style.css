@@ -70,11 +70,19 @@ nav {
   mix-blend-mode: difference;
 }
 
-nav a {
-  color: #ffff;
+.nav-link {
+  color: #ffff!important;
   font-family: 'Nav';
   text-decoration: none;
   font-size: 1.5vw;
+  display: unset!important;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-link {
+    margin-right: 1.5vh;
+    font-size: 5vw;
+  }
 }
 
 nav h1 {
@@ -82,19 +90,16 @@ nav h1 {
   line-height: 1;
 }
 
-a.active {
+nav ul li a:hover {
   text-decoration: line-through;
   color: #fff;
 }
 
-@media screen and (max-width: 992px) {
-    nav a {
-      margin-right: 1.5vh;
-      font-size: 5vw;
-    }
-  }
+nav ul {
+  list-style-type: none;
+}
 
-nav ul li a:hover {
+a.active {
   text-decoration: line-through;
   color: #fff;
 }
@@ -148,7 +153,7 @@ footer {
   color: #ffff;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
     .stick-bottom {
       position: fixed;
       bottom: 0;
@@ -165,15 +170,20 @@ footer {
   }
 }
 
-.typewriter {
+.typewriter, .typewriter a {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: .1em; /* Adjust as needed */
   color: #ffff;
   font-family: 'Title';
+  text-decoration: none;
   font-size: 1.5vw;
         animation: typing 6.5s steps(95, start);
-  }
+}
+
+.typewriter a:hover {
+  text-decoration: line-through;
+}
   
   /* The typing effect */
   @keyframes typing {
@@ -182,11 +192,11 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .typewriter {
-      font-size: 4vw;
-      animation: typing 2.5s steps(35, start);
-    }
+  .typewriter, .typewriter a{
+    font-size: 4vw;
+    animation: typing 2.5s steps(35, start);
   }
+}
 
 hr {
   color: #fff;

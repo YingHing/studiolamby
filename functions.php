@@ -1,7 +1,7 @@
 <?php
 
 $folder = '/functions';
-$roots_includes = ['/menus.php', '/themesupport.php', '/register-styles.php', '/register-scripts.php', '/wp-images.php'];
+$roots_includes = ['/menus.php', '/themesupport.php', '/register-styles.php', '/register-scripts.php', '/wp-images.php', '/navbar-class.php'];
 
 // split content at the more tag and return an array
 

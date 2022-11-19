@@ -24,7 +24,34 @@ function resizeLogo() {
 	}
 }
 
+function activeNav() {
+	var path = window.location.href;
+     $('ul a').each(function() {
+      if (this.href === path) {
+       $(this).addClass('active');
+      }
+     });
+	console.log('clicked');
+}
+
 $(window).ready(function() {
-	stickyNav();
+	// stickyNav();
 	resizeLogo();
+	activeNav();
+
+	const cursor = curDot({
+		zIndex: 2,
+		diameter: 20,
+		easing: 8,
+		background: '#fff'
+	});
+
+	cursor.over(".hover", {
+		scale: 5,
+	  });
+
+	  cursor.over(".hoverpink", {
+		scale: 5,
+		background: "#ff8fa3"
+	  });
 });

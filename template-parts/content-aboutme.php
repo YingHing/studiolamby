@@ -1,6 +1,4 @@
-<?php
-    $content = split_content();
-?>
+<?php $content = split_content(); ?>
 
 <div class="container-fluid px-4 py-5 mb-5 animate__animated animate__slideInUp">
 <div class="row mt-9">
@@ -12,7 +10,7 @@
     </div>
 </div>
 
-<div class="container-fluid px-4 py-5 animate__animated animate__slideInUp" style="background-color: #000;">
+<div class="container-fluid px-4 py-5 animate__animated animate__slideInUp hoverpink" style="background-color: #000;">
 <!-- <hr class="m-auto" style="width:100%;"/> -->
     <div class="row py-5">
         <div class="col-lg-auto pe-5">

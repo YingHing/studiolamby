@@ -3,7 +3,7 @@
  <?php get_header(); ?>
 
  <article class="content mt-auto">
- 	<div class="container-fluid px-4 size-title-mobile mt-auto">
+ 	<div class="container-fluid px-4 mt-auto">
 		<?php
 			if( have_posts() ){
 				while( have_posts() ){
@@ -15,4 +15,5 @@
 		?>
 	</div>
 </article>
+
 <?php get_footer(); ?>

@@ -1,6 +1,4 @@
-<?php 
-	get_header();
-?>
+<?php get_header(); ?>
 
 <article class="content">
 	<div class="container-fluid px-4 size-title-mobile fixed-bottom">
@@ -16,6 +14,4 @@
 	</div>
 </article>
 
-<?php 
-	get_footer();
-?>
+<?php get_footer(); ?>
