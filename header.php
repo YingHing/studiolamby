@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Studio Lamby">
     <meta name="author" content="Ying">
-    <link rel="shortcut icon" href="/wordpress/wp-content/themes/wordpresstutorial/assets/images/favicon-32x32-02.png">
+    <!-- <link rel="shortcut icon" href="/wp-content/themes/studiolamby/assets/images/favicon.png"> -->
 
 <?php wp_head(); ?>
 
