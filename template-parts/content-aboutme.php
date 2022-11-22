@@ -4,7 +4,7 @@
 <div class="row mt-9">
         <div class="col">
             <div class="post-text" >
-                <h1> <?php echo '<div id="column1">', array_shift($content), '</div>'; ?> </h1>
+                <?php echo '<div id="column1">', array_shift($content), '</div>'; ?>
             </div>
         </div>
     </div>
