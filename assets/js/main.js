@@ -1,15 +1,3 @@
-
-// function stickyNav() {
-// 	$(window).scroll(function() {
-// 		if ($(this).scrollTop() > 1){
-// 			$('.page-title').addClass("sticky-top")
-// 		}
-// 		else{
-// 			$('.page-title').removeClass("sticky-top")
-// 		}
-// 	});
-// }
-
 function resizeLogo() {
 	if (window.location.pathname != "/"){
 		$(window).scroll(function() {
@@ -34,11 +22,7 @@ function activeNav() {
 	console.log('clicked');
 }
 
-$(window).ready(function() {
-	// stickyNav();
-	resizeLogo();
-	activeNav();
-
+function cursorWeb() {
 	const cursor = curDot({
 		zIndex: 2,
 		diameter: 20,
@@ -54,4 +38,11 @@ $(window).ready(function() {
 		scale: 5,
 		background: "#ff8fa3"
 	  });
+}
+
+$(window).ready(function() {
+	// stickyNav();
+	resizeLogo();
+	activeNav();
+	cursorWeb();
 });
