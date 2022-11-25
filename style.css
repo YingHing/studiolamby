@@ -153,6 +153,13 @@ footer {
   color: #ffff;
 }
 
+canvas{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
 .about-text {
   font-size: 3.5vw;
 }

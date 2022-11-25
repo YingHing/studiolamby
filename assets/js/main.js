@@ -19,7 +19,6 @@ function activeNav() {
        $(this).addClass('active');
       }
      });
-	console.log('clicked');
 }
 
 function cursorWeb() {
@@ -38,6 +37,39 @@ function cursorWeb() {
 		scale: 5,
 		background: "#ff8fa3"
 	  });
+}
+
+let points = [];
+let position = {x: 0, y: 0};
+
+function setup(){
+	if ($('.drawing').length > 0) {
+		createCanvas(windowWidth, windowHeight)
+	}
+}
+
+function draw(){
+	if ($('.drawing').length > 0) {
+		noStroke();
+		fill(255,143,163);
+
+		let dx = mouseX - pmouseX;
+		let dy = mouseY - pmouseY;
+
+		if (dx || dy){
+		position = {x: mouseX, y: mouseY};
+
+		if (points.length >= 50){
+			points.splice(0, 1);
+		}
+
+		points.push(position);
+		}
+
+		points.forEach(point => {
+		ellipse(point.x, point.y, 75,75)
+		});
+	}
 }
 
 $(window).ready(function() {
