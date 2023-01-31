@@ -12,13 +12,23 @@
             }
         }
     }
+
+    $content = get_the_content();
+    $content = apply_filters( 'the_content', $content );
+    $content = str_replace( ']]>', ']]&gt;', $content );
+    $content = strip_tags($content, '<p>'); // Only keep <p> tags
+    $paragraphs = explode("</p>", $content);
+    
+    $first_paragraph = $paragraphs[0] . "</p>";
+    $second_paragraph = $paragraphs[1] . "</p>";
 ?>
 
 <div class="row">
     <div class="col-lg-4 stick-bottom py-3 animate__animated animate__slideInUp">
         <div class="post-text" >
             <h1 class="size-title-article"> <?php echo(the_title()); ?> </h1>
-            <p class="lead"> <?php echo wp_strip_all_tags( get_the_content() ); ?> </p>
+            <p class="lead"> <?php echo $first_paragraph; ?> </p>
+            <p class="lead"> <?php if (!empty(trim($second_paragraph))) { echo $second_paragraph; } ?> </p>
         </div>
     </div>
 
