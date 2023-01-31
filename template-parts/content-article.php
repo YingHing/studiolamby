@@ -19,6 +19,10 @@
     $content = strip_tags($content, '<p>'); // Only keep <p> tags
     $paragraphs = explode("</p>", $content);
     
+    $paragraphs = array_filter($paragraphs, function($value) {
+      return !empty(trim($value));
+    });
+    
     $first_paragraph = $paragraphs[0] . "</p>";
     $second_paragraph = $paragraphs[1] . "</p>";
 ?>
@@ -27,8 +31,8 @@
     <div class="col-lg-4 stick-bottom py-3 animate__animated animate__slideInUp">
         <div class="post-text" >
             <h1 class="size-title-article"> <?php echo(the_title()); ?> </h1>
-            <p class="lead"> <?php echo $first_paragraph; ?> </p>
-            <p class="lead"> <?php if (!empty(trim($second_paragraph))) { echo $second_paragraph; } ?> </p>
+            <?php echo $first_paragraph;
+            if (count($paragraphs) > 1) { echo $second_paragraph; } ?>
         </div>
     </div>
 
