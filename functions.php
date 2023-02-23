@@ -1,4 +1,7 @@
 <?php
+add_action('rest_api_init', function () {
+	// Enable REST API
+  });
 
 $folder = '/functions';
 $roots_includes = ['/menus.php', '/themesupport.php', '/register-styles.php', '/register-scripts.php', '/wp-images.php', '/navbar-class.php'];
